@@ -1,0 +1,50 @@
+{
+    "after_first_talk": {
+        "scene": "village",
+        "trigger": {
+            "event": "dialog_closed",
+            "npc": "merchant",
+            "dialog_level": 0
+        },
+        "run_once": true,
+        "actions": [
+            {
+                "type": "move_npc",
+                "npcs": [
+                    "merchant"
+                ],
+                "waypoint": "merchant_exit"
+            }
+        ]
+    },
+    "merchant_disappear_on_arrival": {
+        "scene": "village",
+        "trigger": {
+            "event": "npc_movement_complete",
+            "npc": "merchant"
+        },
+        "actions": [
+            {
+                "type": "start_disappear_animation",
+                "npcs": [
+                    "merchant"
+                ]
+            }
+        ]
+    },
+    "merchant_remove_from_walls": {
+        "scene": "village",
+        "trigger": {
+            "event": "npc_disappear_complete",
+            "npc": "merchant"
+        },
+        "actions": [
+            {
+                "type": "remove_npc_from_walls",
+                "npcs": [
+                    "merchant"
+                ]
+            }
+        ]
+    }
+}

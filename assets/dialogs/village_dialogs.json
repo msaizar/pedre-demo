@@ -1,0 +1,12 @@
+{
+    "merchant": {
+        "0": {
+            "name": "Merchant",
+            "text": [
+                "Hello, traveler!",
+                "Welcome to our village.",
+                "Follow me into the forest!"
+            ]
+        }
+    }
+}
