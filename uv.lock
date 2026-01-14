@@ -83,27 +83,15 @@ wheels = [
 [[package]]
 name = "pedre"
 version = "0.0.1"
-source = { editable = "../pedre" }
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "arcade" },
     { name = "rich" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "arcade" },
-    { name = "rich" },
+sdist = { url = "https://files.pythonhosted.org/packages/3a/bc/7f2ede33e59f22791b133f420429214667589fb658bf48a2a675dc426095/pedre-0.0.1.tar.gz", hash = "sha256:56fb69bb5b0d35041b6aee0b2b7768e13ec1b7b7d31ec81f019e4180017fb702", size = 202474, upload-time = "2026-01-14T19:44:38.349Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0e/d8/7470d435078b7f31690427b73f618b56f3a56e40cadcaf8197645a4988a5/pedre-0.0.1-py3-none-any.whl", hash = "sha256:e6f91a721d67001f5fba960e5051c522696039fa1feb0c28296a986d4f83136b", size = 154496, upload-time = "2026-01-14T19:44:36.834Z" },
 ]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "coverage" },
-    { name = "pyinstaller" },
-    { name = "pytest" },
-    { name = "ruff" },
-    { name = "ty" },
-]
-docs = [{ name = "zensical" }]
 
 [[package]]
 name = "pedre-demo"
@@ -114,7 +102,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pedre", editable = "../pedre" }]
+requires-dist = [{ name = "pedre" }]
 
 [[package]]
 name = "pillow"

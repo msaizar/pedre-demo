@@ -8,5 +8,3 @@ dependencies = [
     "pedre",
 ]
 
-[tool.uv.sources]
-pedre = { path = "../pedre", editable = true }
