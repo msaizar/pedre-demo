@@ -1,4 +1,29 @@
 {
+    "to_forest_portal": {
+        "scene": "village",
+        "trigger": {
+            "event": "portal_entered",
+            "portal": "to_forest"
+        },
+        "actions": [
+            {
+                "type": "change_scene",
+                "target_map": "forest.tmx",
+                "spawn_waypoint": "from_village"
+            }
+        ],
+        "conditions": [{
+            "check": "script_completed",
+            "script": "after_first_talk"
+        }],
+        "on_condition_fail": [{
+            "type": "dialog",
+            "speaker": "Player",
+            "text": [
+                "I can't go into the forest by myself!"
+            ]
+        }]
+    },
     "after_first_talk": {
         "scene": "village",
         "trigger": {
@@ -14,36 +39,18 @@
                     "merchant"
                 ],
                 "waypoint": "merchant_exit"
-            }
-        ]
-    },
-    "merchant_disappear_on_arrival": {
-        "scene": "village",
-        "trigger": {
-            "event": "npc_movement_complete",
-            "npc": "merchant"
-        },
-        "actions": [
+            },
+            {
+                "type": "wait_for_movement",
+                "npc": "merchant"
+            },
             {
                 "type": "start_disappear_animation",
-                "npcs": [
-                    "merchant"
-                ]
-            }
-        ]
-    },
-    "merchant_remove_from_walls": {
-        "scene": "village",
-        "trigger": {
-            "event": "npc_disappear_complete",
-            "npc": "merchant"
-        },
-        "actions": [
+                "npcs": ["merchant"]
+            },
             {
-                "type": "remove_npc_from_walls",
-                "npcs": [
-                    "merchant"
-                ]
+                "type": "wait_for_npcs_disappear",
+                "npcs": ["merchant"]
             }
         ]
     }

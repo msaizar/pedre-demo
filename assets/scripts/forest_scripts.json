@@ -1,6 +1,6 @@
 {
-    "after_first_talk": {
-        "scene": "village",
+    "forest_scene_start": {
+        "scene": "forest",
         "run_once": true,
         "trigger": {
             "event": "scene_start"
@@ -12,7 +12,38 @@
                     "merchant"
                 ],
                 "waypoint": "merchant_1"
+            },
+            {
+                "type": "wait_for_movement",
+                "npc": "merchant"
             }
         ]
+    },
+    "to_village_portal": {
+        "scene": "forest",
+        "trigger": {
+            "event": "portal_entered",
+            "portal": "to_village"
+        },
+        "actions": [
+            {
+                "type": "change_scene",
+                "target_map": "village.tmx",
+                "spawn_waypoint": "from_forest"
+            }
+        ],
+        "conditions": [
+            {
+                "check": "script_completed",
+                "script": "forest_scene_start"
+            }
+        ],
+        "on_condition_fail": [{
+            "type": "dialog",
+            "speaker": "Player",
+            "text": [
+                "Let's see what the merchant does first"
+            ]
+        }]
     }
 }
