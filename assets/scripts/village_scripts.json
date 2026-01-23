@@ -60,6 +60,7 @@
             "event": "object_interacted",
             "object_name": "golden_door"
         },
+        "run_once": true,
         "actions": [
             {
                 "type": "dialog",
