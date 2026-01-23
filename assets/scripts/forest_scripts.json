@@ -62,6 +62,11 @@
                 ]
             },
             {
+                "type": "emit_particles",
+                "particle_type": "burst",
+                "interactive_object": "chest"
+            },
+            {
                 "type": "acquire_item",
                 "item_id": "golden_key"
             }

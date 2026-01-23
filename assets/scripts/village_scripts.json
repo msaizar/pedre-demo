@@ -1,4 +1,29 @@
 {
+    "village_scene_start": {
+        "scene": "village",
+        "run_once": true,
+        "trigger": {
+            "event": "scene_start"
+        },
+        "actions": [
+            {
+                "type": "dialog",
+                "speaker": "Info",
+                "text": [
+                    "Welcome to Pedre demo. Try opening the first door, leaving the scene, and then talking to the merchant."
+                ]
+            },
+            {
+                "type": "wait_for_dialog_close"
+            },
+            {
+                "type": "emit_particles",
+                "particle_type": "burst",
+                "player": true
+            }
+
+        ]
+    },
     "talk_to_merchant": {
         "scene": "village",
         "trigger": {
@@ -85,8 +110,13 @@
                 "type": "dialog",
                 "speaker": "Info",
                 "text": [
-                    "You've opened the golden door!"
+                    "You've opened the golden door! Thanks for trying the demo."
                 ]
+            },
+            {
+                "type": "emit_particles",
+                "particle_type": "burst",
+                "interactive_object": "golden_door"
             }
         ],
         "conditions": [
