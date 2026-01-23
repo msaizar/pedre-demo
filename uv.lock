@@ -82,15 +82,15 @@ wheels = [
 
 [[package]]
 name = "pedre"
-version = "0.0.6"
+version = "0.0.7"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "arcade" },
     { name = "rich" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a1/a0/0a6ddb490c2b8088f44d428fd94888726c0984bbd559349a38d7232ff2b6/pedre-0.0.6.tar.gz", hash = "sha256:658cc8aade188d4ad12f9fdada3f94b5a8629ef0349d9df04984a6eb90d1a924", size = 214734, upload-time = "2026-01-23T02:32:37.469Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2f/eb/c434802e54e652376a7fd7f5d9567f0277f454b5a6247e2b187ad448815a/pedre-0.0.7.tar.gz", hash = "sha256:09315ceab4bcac4b69b1afb2c2e6b31d1fe055ecc7acf31d2bf66e6bfd1f7583", size = 217868, upload-time = "2026-01-23T17:01:08.51Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6a/44/976f4da9cba934a26c6c685f4686ae8894e483424045b7c5d17196a51c7e/pedre-0.0.6-py3-none-any.whl", hash = "sha256:5b96b75c1f8a575ad67d29d4251f3ff652c08d148141e105f34a28ec7c081f69", size = 184989, upload-time = "2026-01-23T02:32:35.844Z" },
+    { url = "https://files.pythonhosted.org/packages/aa/63/a3f8b25cf62fda66be8b0f83413200f113a3bc306d646c81eb7af732a2ee/pedre-0.0.7-py3-none-any.whl", hash = "sha256:8cb8e1a2ae2c52af44e0e65de5eee4560b095d88ad27cb6bd105d2d139d2b73b", size = 186121, upload-time = "2026-01-23T17:01:07.149Z" },
 ]
 
 [[package]]
