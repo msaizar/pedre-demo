@@ -11,3 +11,8 @@ uv sync
 ```bash
 uv run python main.py
 ```
+
+## Assets
+
+[Icons](https://clockworkraven.itch.io/raven-fantasy-icons)
+[Tilesets & Characters](https://kenmi-art.itch.io/cute-fantasy-rpg)
