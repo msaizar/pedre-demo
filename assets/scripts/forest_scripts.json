@@ -42,8 +42,44 @@
             "type": "dialog",
             "speaker": "Player",
             "text": [
-                "Let's see what the merchant does first"
+                "Let's see what the merchant says first."
             ]
         }]
+    },
+    "collect_key": {
+        "scene": "forest",
+        "trigger": {
+            "event": "object_interacted",
+            "object_name": "chest"
+        },
+        "run_once": true,
+        "actions": [
+            {
+                "type": "dialog",
+                "speaker": "Info",
+                "text": [
+                    "You found a Golden Key!"
+                ]
+            },
+            {
+                "type": "acquire_item",
+                "item_id": "golden_key"
+            }
+        ],
+        "conditions": [
+            {
+                "check": "script_completed",
+                "script": "forest_scene_start"
+            }
+        ],
+        "on_condition_fail": [
+            {
+                "type": "dialog",
+                "speaker": "Player",
+                "text": [
+                    "Let's see what the merchant does first."
+                ]
+            }
+        ]
     }
 }

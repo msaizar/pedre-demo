@@ -53,5 +53,36 @@
                 "npcs": ["merchant"]
             }
         ]
+    },
+    "open_village_door": {
+        "scene": "village",
+        "trigger": {
+            "event": "object_interacted",
+            "object_name": "golden_door"
+        },
+        "actions": [
+            {
+                "type": "dialog",
+                "speaker": "Info",
+                "text": [
+                    "You've opened the golden door!"
+                ]
+            }
+        ],
+        "conditions": [
+            {
+                "check": "item_acquired",
+                "item_id": "golden_key"
+            }
+        ],
+        "on_condition_fail": [
+            {
+                "type": "dialog",
+                "speaker": "Player",
+                "text": [
+                    "I'm missing a key for this locked door."
+                ]
+            }
+        ]
     }
 }

@@ -1,1 +1,10 @@
-{"items": []}
+{"items": [
+    {
+        "id": "golden_key",
+        "name": "Golden Key",
+        "description": "A mysterious golden key found in the forest.",
+        "icon_path": "images/items/golden_key_icon.png",
+        "category": "key_items",
+        "acquired": false
+    }
+]}
