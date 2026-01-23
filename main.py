@@ -9,6 +9,7 @@ settings = GameSettings(
     window_title="My First RPG",
     initial_map="village.tmx",
     portal_interaction_distance=16,
+    menu_music_files=["background.ogg"]
 )
 
 if __name__ == "__main__":

@@ -1,4 +1,23 @@
 {
+    "talk_to_merchant": {
+        "scene": "village",
+        "trigger": {
+            "event": "dialog_opened",
+            "npc": "merchant",
+            "dialog_level": 0
+        },
+        "actions": [
+            {
+                "type": "play_sfx",
+                "file": "greeting.wav"
+            },
+            {
+                "type": "emit_particles",
+                "particle_type": "burst",
+                "npc": "merchant"
+            }
+        ]
+    },
     "to_forest_portal": {
         "scene": "village",
         "trigger": {
