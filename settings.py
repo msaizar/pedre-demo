@@ -1,0 +1,7 @@
+# Configure game settings
+SCREEN_WIDTH=1280
+SCREEN_HEIGHT=720
+WINDOW_TITLE="My First RPG"
+INITIAL_MAP="village.tmx"
+PORTAL_INTERACTION_DISTANCE=16
+MENU_MUSIC_FILES=["background.ogg"]
