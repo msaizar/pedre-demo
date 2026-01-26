@@ -18,3 +18,4 @@ uv run python main.py
 [Tilesets & Characters](https://kenmi-art.itch.io/cute-fantasy-rpg)
 [Music](https://pizzadoggy.itch.io/cozy-tunes)
 [Voice SFX](https://dillonbecker.itch.io/sdap)
+[Map](https://lukasfdahl.itch.io/world-map)
