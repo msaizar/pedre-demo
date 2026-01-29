@@ -32,13 +32,21 @@
  <objectgroup id="2" name="NPCs">
   <object id="3" name="merchant" x="32.1168" y="172.76">
    <properties>
+    <property name="idle_down_frames" type="int" value="6"/>
+    <property name="idle_down_row" type="int" value="0"/>
     <property name="idle_right_frames" type="int" value="6"/>
     <property name="idle_right_row" type="int" value="1"/>
+    <property name="idle_up_frames" type="int" value="6"/>
+    <property name="idle_up_row" type="int" value="2"/>
     <property name="name" value="merchant"/>
     <property name="sprite_sheet" value="images/Enemies/Skeleton.png"/>
     <property name="tile_size" type="int" value="32"/>
-    <property name="walk_right_frames" value="6"/>
-    <property name="walk_right_row" value="4"/>
+    <property name="walk_down_frames" type="int" value="6"/>
+    <property name="walk_down_row" type="int" value="3"/>
+    <property name="walk_right_frames" type="int" value="6"/>
+    <property name="walk_right_row" type="int" value="4"/>
+    <property name="walk_up_frames" type="int" value="6"/>
+    <property name="walk_up_row" type="int" value="5"/>
    </properties>
    <point/>
   </object>
@@ -78,13 +86,21 @@
  <objectgroup id="3" name="Player">
   <object id="2" name="player" x="47.3314" y="100.579">
    <properties>
+    <property name="idle_down_frames" type="int" value="6"/>
+    <property name="idle_down_row" type="int" value="0"/>
     <property name="idle_right_frames" type="int" value="6"/>
     <property name="idle_right_row" type="int" value="1"/>
+    <property name="idle_up_frames" type="int" value="6"/>
+    <property name="idle_up_row" type="int" value="2"/>
     <property name="spawn_at_portal" type="bool" value="true"/>
     <property name="sprite_sheet" value="images/Player/Player.png"/>
     <property name="tile_size" type="int" value="32"/>
-    <property name="walk_right_frames" value="6"/>
-    <property name="walk_right_row" value="4"/>
+    <property name="walk_down_frames" type="int" value="6"/>
+    <property name="walk_down_row" type="int" value="3"/>
+    <property name="walk_right_frames" type="int" value="6"/>
+    <property name="walk_right_row" type="int" value="4"/>
+    <property name="walk_up_frames" type="int" value="6"/>
+    <property name="walk_up_row" type="int" value="5"/>
    </properties>
    <point/>
   </object>
