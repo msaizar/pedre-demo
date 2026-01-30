@@ -1,4 +1,18 @@
 {
+    "forest_love_potion_consumed": {
+        "scene": "village",
+        "trigger": {
+            "event": "item_consumed",
+            "category": "love_potion"
+        },
+        "actions": [
+            {
+                "type": "emit_particles",
+                "particle_type": "hearts",
+                "player": true
+            }
+        ]
+    },
     "forest_scene_start": {
         "scene": "forest",
         "run_once": true,
@@ -58,7 +72,7 @@
                 "type": "dialog",
                 "speaker": "Info",
                 "text": [
-                    "You found a Golden Key!"
+                    "You found a golden key and a potion!"
                 ]
             },
             {
@@ -69,6 +83,12 @@
             {
                 "type": "acquire_item",
                 "item_id": "golden_key"
+            },
+            {
+                "type": "add_item",
+                "category": "love_potion",
+                "consumable": true,
+                "name": "Love Potion"
             }
         ],
         "conditions": [

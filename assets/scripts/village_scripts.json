@@ -1,4 +1,18 @@
 {
+    "village_love_potion_consumed": {
+        "scene": "village",
+        "trigger": {
+            "event": "item_consumed",
+            "category": "love_potion"
+        },
+        "actions": [
+            {
+                "type": "emit_particles",
+                "particle_type": "hearts",
+                "player": true
+            }
+        ]
+    },
     "village_scene_start": {
         "scene": "village",
         "run_once": true,
@@ -112,6 +126,10 @@
                 "text": [
                     "You've opened the golden door! Thanks for trying the demo."
                 ]
+            },
+            {
+                "type": "consume_item",
+                "item_id": "golden_key"
             },
             {
                 "type": "emit_particles",
