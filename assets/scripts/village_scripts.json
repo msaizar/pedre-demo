@@ -33,7 +33,8 @@
             {
                 "type": "emit_particles",
                 "particle_type": "burst",
-                "player": true
+                "player": true,
+                "color": [200, 100, 50]
             }
 
         ]
@@ -91,6 +92,11 @@
         },
         "run_once": true,
         "actions": [
+            {
+                "type": "emit_particles",
+                "particle_type": "trail",
+                "npc": "merchant"
+            },
             {
                 "type": "move_npc",
                 "npcs": [
