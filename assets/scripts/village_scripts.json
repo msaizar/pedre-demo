@@ -1,18 +1,4 @@
 {
-    "village_love_potion_consumed": {
-        "scene": "village",
-        "trigger": {
-            "event": "item_consumed",
-            "category": "love_potion"
-        },
-        "actions": [
-            {
-                "type": "emit_particles",
-                "particle_type": "hearts",
-                "player": true
-            }
-        ]
-    },
     "village_scene_start": {
         "scene": "village",
         "run_once": true,
