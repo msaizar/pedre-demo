@@ -95,5 +95,18 @@
                 ]
             }
         ]
+    },
+    "merchant_disappears": {
+        "scene": "forest",
+        "trigger": {
+            "event": "dialog_closed",
+            "npc": "merchant"
+        },
+        "actions": [
+            {
+                "type": "start_disappear_animation",
+                "npcs": ["merchant"]
+            }
+        ]
     }
 }
