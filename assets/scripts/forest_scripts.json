@@ -75,7 +75,8 @@
                 "type": "add_item",
                 "category": "love_potion",
                 "consumable": true,
-                "name": "Love Potion"
+                "name": "Love Potion",
+                "icon_path": "images/icons/potion.png"
             }
         ],
         "conditions": [
