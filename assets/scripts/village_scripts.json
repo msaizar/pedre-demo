@@ -18,7 +18,7 @@
             },
             {
                 "type": "emit_particles",
-                "particle_type": "burst",
+                "particle_type": "sparkles",
                 "player": true,
                 "color": [200, 100, 50]
             }
