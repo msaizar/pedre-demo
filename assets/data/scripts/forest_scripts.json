@@ -7,14 +7,14 @@
         },
         "actions": [
             {
-                "type": "move_npc",
+                "name": "move_npc",
                 "npcs": [
                     "merchant"
                 ],
                 "waypoint": "merchant_1"
             },
             {
-                "type": "wait_for_movement",
+                "name": "wait_for_movement",
                 "npc": "merchant"
             }
         ]
@@ -27,20 +27,20 @@
         },
         "actions": [
             {
-                "type": "change_scene",
+                "name": "change_scene",
                 "target_map": "village.tmx",
                 "spawn_waypoint": "from_forest"
             }
         ],
         "conditions": [
             {
-                "check": "npc_interacted",
+                "name": "npc_interacted",
                 "scene": "forest",
                 "npc": "merchant"
             }
         ],
         "on_condition_fail": [{
-            "type": "dialog",
+            "name": "dialog",
             "speaker": "Player",
             "text": [
                 "Let's see what the merchant says first."
@@ -56,39 +56,39 @@
         "run_once": true,
         "actions": [
             {
-                "type": "dialog",
+                "name": "dialog",
                 "speaker": "Info",
                 "text": [
                     "You found a golden key and a potion!"
                 ]
             },
             {
-                "type": "emit_particles",
+                "name": "emit_particles",
                 "particle_type": "burst",
                 "interactive_object": "chest"
             },
             {
-                "type": "acquire_item",
+                "name": "acquire_item",
                 "item_id": "golden_key"
             },
             {
-                "type": "add_item",
+                "name": "add_item",
                 "category": "love_potion",
                 "consumable": true,
-                "name": "Love Potion",
+                "item_name": "Love Potion",
                 "icon_path": "images/icons/potion.png"
             }
         ],
         "conditions": [
             {
-                "check": "npc_interacted",
+                "name": "npc_interacted",
                 "scene": "forest",
                 "npc": "merchant"
             }
         ],
         "on_condition_fail": [
             {
-                "type": "dialog",
+                "name": "dialog",
                 "speaker": "Player",
                 "text": [
                     "Let's see what the merchant says first."
@@ -104,7 +104,7 @@
         },
         "actions": [
             {
-                "type": "start_disappear_animation",
+                "name": "start_disappear_animation",
                 "npcs": ["merchant"]
             }
         ]

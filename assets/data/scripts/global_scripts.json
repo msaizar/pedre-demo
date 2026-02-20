@@ -6,7 +6,7 @@
         },
         "actions": [
             {
-                "type": "emit_particles",
+                "name": "emit_particles",
                 "particle_type": "hearts",
                 "player": true
             }

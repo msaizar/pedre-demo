@@ -7,17 +7,17 @@
         },
         "actions": [
             {
-                "type": "dialog",
+                "name": "dialog",
                 "speaker": "Info",
                 "text": [
                     "Welcome to Pedre demo. Try opening the first door, leaving the scene, and then talking to the merchant."
                 ]
             },
             {
-                "type": "wait_for_dialog_close"
+                "name": "wait_for_dialog_close"
             },
             {
-                "type": "emit_particles",
+                "name": "emit_particles",
                 "particle_type": "sparkles",
                 "player": true,
                 "color": [200, 100, 50]
@@ -34,11 +34,11 @@
         },
         "actions": [
             {
-                "type": "play_sfx",
+                "name": "play_sfx",
                 "file": "greeting.wav"
             },
             {
-                "type": "emit_particles",
+                "name": "emit_particles",
                 "particle_type": "burst",
                 "npc": "merchant"
             }
@@ -52,17 +52,17 @@
         },
         "actions": [
             {
-                "type": "change_scene",
+                "name": "change_scene",
                 "target_map": "forest.tmx",
                 "spawn_waypoint": "from_village"
             }
         ],
         "conditions": [{
-            "check": "script_completed",
+            "name": "script_completed",
             "script": "after_first_talk"
         }],
         "on_condition_fail": [{
-            "type": "dialog",
+            "name": "dialog",
             "speaker": "Player",
             "text": [
                 "I can't go into the forest by myself!"
@@ -79,27 +79,27 @@
         "run_once": true,
         "actions": [
             {
-                "type": "emit_particles",
+                "name": "emit_particles",
                 "particle_type": "trail",
                 "npc": "merchant"
             },
             {
-                "type": "move_npc",
+                "name": "move_npc",
                 "npcs": [
                     "merchant"
                 ],
                 "waypoint": "merchant_exit"
             },
             {
-                "type": "wait_for_movement",
+                "name": "wait_for_movement",
                 "npc": "merchant"
             },
             {
-                "type": "start_disappear_animation",
+                "name": "start_disappear_animation",
                 "npcs": ["merchant"]
             },
             {
-                "type": "wait_for_npcs_disappear",
+                "name": "wait_for_npcs_disappear",
                 "npcs": ["merchant"]
             }
         ]
@@ -113,31 +113,31 @@
         "run_once": true,
         "actions": [
             {
-                "type": "dialog",
+                "name": "dialog",
                 "speaker": "Info",
                 "text": [
                     "You've opened the golden door! Thanks for trying the demo."
                 ]
             },
             {
-                "type": "consume_item",
+                "name": "consume_item",
                 "item_id": "golden_key"
             },
             {
-                "type": "emit_particles",
+                "name": "emit_particles",
                 "particle_type": "burst",
                 "interactive_object": "golden_door"
             }
         ],
         "conditions": [
             {
-                "check": "item_acquired",
+                "name": "item_acquired",
                 "item_id": "golden_key"
             }
         ],
         "on_condition_fail": [
             {
-                "type": "dialog",
+                "name": "dialog",
                 "speaker": "Player",
                 "text": [
                     "I'm missing a key for this locked door."
