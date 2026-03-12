@@ -1,0 +1,10 @@
+{
+    "village": {
+        "music": "background.ogg",
+        "camera_follow": "player",
+        "camera_smooth": true
+    },
+    "forest": {
+        "music": "background.ogg"
+    }
+}

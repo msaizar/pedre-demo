@@ -1,14 +1,12 @@
-{"items": [
-    {
-        "id": "golden_key",
+{
+    "golden_key": {
         "name": "Golden Key",
         "description": "A mysterious golden key found in the forest.",
         "icon_path": "images/icons/golden_key.png",
         "category": "key_items",
         "acquired": false
     },
-    {
-        "id": "world_map",
+    "world_map": {
         "name": "A map",
         "description": "A map you always carry around with you.",
         "icon_path": "images/icons/map.png",
@@ -16,4 +14,4 @@
         "category": "photos",
         "acquired": true
     }
-]}
+}

@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="8">
- <properties>
-  <property name="music" value="background.ogg"/>
- </properties>
  <tileset firstgid="1" source="../tilesets/Grass_Middle.tsx"/>
  <tileset firstgid="2" source="../tilesets/House_1_Wood_Base_Blue.tsx"/>
  <tileset firstgid="50" source="../tilesets/Path_Tile.tsx"/>
@@ -33,23 +30,6 @@
  </layer>
  <objectgroup id="4" name="NPCs">
   <object id="2" name="merchant" x="311.905" y="150">
-   <properties>
-    <property name="idle_down_frames" type="int" value="6"/>
-    <property name="idle_down_row" type="int" value="0"/>
-    <property name="idle_right_frames" type="int" value="6"/>
-    <property name="idle_right_row" type="int" value="1"/>
-    <property name="idle_up_frames" type="int" value="6"/>
-    <property name="idle_up_row" type="int" value="2"/>
-    <property name="name" value="merchant"/>
-    <property name="sprite_sheet" value="images/Enemies/Skeleton.png"/>
-    <property name="tile_size" type="int" value="32"/>
-    <property name="walk_down_frames" type="int" value="6"/>
-    <property name="walk_down_row" type="int" value="3"/>
-    <property name="walk_right_frames" type="int" value="6"/>
-    <property name="walk_right_row" type="int" value="4"/>
-    <property name="walk_up_frames" type="int" value="6"/>
-    <property name="walk_up_row" type="int" value="5"/>
-   </properties>
    <point/>
   </object>
  </objectgroup>
@@ -65,34 +45,10 @@
   </object>
  </objectgroup>
  <objectgroup id="7" name="Portals">
-  <object id="4" name="to_forest" x="460.714" y="164.286" width="17.8571" height="38.0952">
-   <properties>
-    <property name="condition_type" value="npc_disappeared"/>
-    <property name="condition_value" value="merchant"/>
-    <property name="spawn_waypoint" value="from_village"/>
-    <property name="target_map" value="forest.tmx"/>
-   </properties>
-  </object>
+  <object id="4" name="to_forest" x="460.714" y="164.286" width="17.8571" height="38.0952"/>
  </objectgroup>
  <objectgroup id="5" name="Player">
   <object id="1" name="player" x="22.619" y="183.333">
-   <properties>
-    <property name="idle_down_frames" type="int" value="6"/>
-    <property name="idle_down_row" type="int" value="0"/>
-    <property name="idle_right_frames" type="int" value="6"/>
-    <property name="idle_right_row" type="int" value="1"/>
-    <property name="idle_up_frames" type="int" value="6"/>
-    <property name="idle_up_row" type="int" value="2"/>
-    <property name="spawn_at_portal" type="bool" value="true"/>
-    <property name="sprite_sheet" value="images/Player/Player.png"/>
-    <property name="tile_size" type="int" value="32"/>
-    <property name="walk_down_frames" type="int" value="6"/>
-    <property name="walk_down_row" type="int" value="3"/>
-    <property name="walk_right_frames" type="int" value="6"/>
-    <property name="walk_right_row" type="int" value="4"/>
-    <property name="walk_up_frames" type="int" value="6"/>
-    <property name="walk_up_row" type="int" value="5"/>
-   </properties>
    <point/>
   </object>
  </objectgroup>

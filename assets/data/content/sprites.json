@@ -1,0 +1,92 @@
+{
+    "player": {
+        "sprite_sheet": "images/Player/Player.png",
+        "frame_width": 32,
+        "frame_height": 32,
+        "states": {
+            "idle": {
+                "directional": true,
+                "loop": true,
+                "priority": 0,
+                "directions": {
+                    "down": {
+                        "frames": 6,
+                        "row": 0
+                    },
+                    "up": {
+                        "frames": 6,
+                        "row": 2
+                    },
+                    "right": {
+                        "frames": 6,
+                        "row": 1
+                    }
+                }
+            },
+            "walk": {
+                "directional": true,
+                "loop": true,
+                "priority": 1,
+                "directions": {
+                    "down": {
+                        "frames": 6,
+                        "row": 3
+                    },
+                    "up": {
+                        "frames": 6,
+                        "row": 5
+                    },
+                    "right": {
+                        "frames": 6,
+                        "row": 4
+                    }
+                }
+            }
+        }
+    },
+    "merchant": {
+        "sprite_sheet": "images/Enemies/Skeleton.png",
+        "frame_width": 32,
+        "frame_height": 32,
+        "states": {
+            "idle": {
+                "directional": true,
+                "loop": true,
+                "priority": 0,
+                "directions": {
+                    "down": {
+                        "frames": 6,
+                        "row": 0
+                    },
+                    "up": {
+                        "frames": 6,
+                        "row": 2
+                    },
+                    "right": {
+                        "frames": 6,
+                        "row": 1
+                    }
+                }
+            },
+            "walk": {
+                "directional": true,
+                "loop": true,
+                "priority": 1,
+                "directions": {
+                    "down": {
+                        "frames": 6,
+                        "row": 3
+                    },
+                    "up": {
+                        "frames": 6,
+                        "row": 5
+                    },
+                    "right": {
+                        "frames": 6,
+                        "row": 4
+                    }
+                }
+            }
+        }
+    }
+}

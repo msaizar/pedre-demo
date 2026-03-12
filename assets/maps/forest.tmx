@@ -31,23 +31,6 @@
  </layer>
  <objectgroup id="2" name="NPCs">
   <object id="3" name="merchant" x="32.1168" y="172.76">
-   <properties>
-    <property name="idle_down_frames" type="int" value="6"/>
-    <property name="idle_down_row" type="int" value="0"/>
-    <property name="idle_right_frames" type="int" value="6"/>
-    <property name="idle_right_row" type="int" value="1"/>
-    <property name="idle_up_frames" type="int" value="6"/>
-    <property name="idle_up_row" type="int" value="2"/>
-    <property name="name" value="merchant"/>
-    <property name="sprite_sheet" value="images/Enemies/Skeleton.png"/>
-    <property name="tile_size" type="int" value="32"/>
-    <property name="walk_down_frames" type="int" value="6"/>
-    <property name="walk_down_row" type="int" value="3"/>
-    <property name="walk_right_frames" type="int" value="6"/>
-    <property name="walk_right_row" type="int" value="4"/>
-    <property name="walk_up_frames" type="int" value="6"/>
-    <property name="walk_up_row" type="int" value="5"/>
-   </properties>
    <point/>
   </object>
  </objectgroup>
@@ -76,32 +59,10 @@
 </data>
  </layer>
  <objectgroup id="9" name="Interactive">
-  <object id="7" name="chest" x="306.481" y="99.0741" width="12.037" height="11.1111">
-   <properties>
-    <property name="item_name" value="golden_key"/>
-    <property name="type" value="item"/>
-   </properties>
-  </object>
+  <object id="7" name="chest" x="306.481" y="99.0741" width="12.037" height="11.1111"/>
  </objectgroup>
  <objectgroup id="3" name="Player">
   <object id="2" name="player" x="47.3314" y="100.579">
-   <properties>
-    <property name="idle_down_frames" type="int" value="6"/>
-    <property name="idle_down_row" type="int" value="0"/>
-    <property name="idle_right_frames" type="int" value="6"/>
-    <property name="idle_right_row" type="int" value="1"/>
-    <property name="idle_up_frames" type="int" value="6"/>
-    <property name="idle_up_row" type="int" value="2"/>
-    <property name="spawn_at_portal" type="bool" value="true"/>
-    <property name="sprite_sheet" value="images/Player/Player.png"/>
-    <property name="tile_size" type="int" value="32"/>
-    <property name="walk_down_frames" type="int" value="6"/>
-    <property name="walk_down_row" type="int" value="3"/>
-    <property name="walk_right_frames" type="int" value="6"/>
-    <property name="walk_right_row" type="int" value="4"/>
-    <property name="walk_up_frames" type="int" value="6"/>
-    <property name="walk_up_row" type="int" value="5"/>
-   </properties>
    <point/>
   </object>
  </objectgroup>
@@ -162,11 +123,6 @@
 </data>
  </layer>
  <objectgroup id="5" name="Portals">
-  <object id="1" name="to_village" x="20.8129" y="152.087" width="15.3827" height="34.3153">
-   <properties>
-    <property name="spawn_waypoint" value="from_forest"/>
-    <property name="target_map" value="village.tmx"/>
-   </properties>
-  </object>
+  <object id="1" name="to_village" x="20.8129" y="152.087" width="15.3827" height="34.3153"/>
  </objectgroup>
 </map>
